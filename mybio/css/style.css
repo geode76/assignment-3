@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-  htlm body {
+  html, body {
     height: 100%;
   }
   body {
@@ -39,7 +39,6 @@
     -o-box-shadow: 5px 5px 5px 1px #242424;
   }
   .content-top {
-    60%;
     height: 180px;
     background-color: white;
     margin: 10px 0;
@@ -86,7 +85,7 @@
     padding: 0 2% 0 2%;
   }
   .sidebar-links {
-    background-color: #F1F1F1F1;
+    background-color: #F1F1F1;
   }
   .sidebar-links li {
     width: 100%;
@@ -122,4 +121,22 @@
   }
   .login-info {
     margin: 10px 0 10px 200px;
+  }
+  .courses {
+    padding-top: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: left;
+  }
+
+  .courses th {
+    font-size: 1.25em;
+    color: darkblue;
+    border: 1.5px solid black;
+    padding: 2px;
+  }
+  .courses td {
+    width: auto;
+    height: auto;
+    border: 1.5px solid black;
+    padding: 2px;
   }
