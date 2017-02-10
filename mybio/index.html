@@ -6,17 +6,24 @@
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<style>
 		.main-content-login {
-			background-color: #1e6cea;
+			background-color: skyblue;
 			display: flex;
-			width: 20em;
-	    height: 15em;
+			width: 24em;
+	    height: 20em;
 			margin: 7em auto;
 	    padding: 0 2% 0 2%;
 			border-radius: 15px;
-			align-items: center;
 	  }
 		.container {
-
+			align-items: center;
+			white-space: pre-line;
+			margin: .5em 0 0 3em;
+			font-size: 1.5em;
+		}
+		.form-shape {
+			width: 18em;
+			height: 2em;
+			border-radius: 5px;
 		}
 		</style>
 	</head>
@@ -26,16 +33,16 @@
 				<h1>Allen Huddleston</h1>
 			</header>
 					<article class = "main-content-login box-shadow">
-						<form action="action_page.php">
+						<form action="./home/home.html">
   						<div class="container">
-    						<label><b>Username</b></label>
-    						<input type="text" placeholder="Enter Username" name="uname" required><br>
-								<label><b>Password</b></label>
-    						<input type="password" placeholder="Enter Password" name="psw" required><br>
-								<button type="submit">Login</button>
+    						<label><b>Username:</b></label>
+    						<input class="form-shape"type="text" placeholder=" Enter Username" name="uname" required><br>
+								<label><b>Password:</b></label>
+    						<input class="form-shape"type="password" placeholder=" Enter Password" name="psw" required><br><br>
+								<button class="form-shape"type="submit">Login</button>
+							</div>
 						</form>
 					</article>
-				</section>
 			</div>
 		<footer class ="footer-3C">
 				<p class="copyright">(c) Created by Allen Huddleston</p>
