@@ -2,11 +2,8 @@
 <html>
 	<head>
 		<title>Login Screen</title>
-		<link rel="icon" type="image/jpg" href="./images/triforce.jpg">
+		<link rel="icon" type="image/jpg" href="./images/triforce.png">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<style>
-
-		</style>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -16,9 +13,9 @@
 					<article class = "main-content-login box-shadow">
 						<form name="login" class="container" onsubmit="return validate()">
     						<label><b>Username:</b></label>
-    						<input class="form-shape" type="text" placeholder=" Enter Username" name="uname" required><br>
+    						<input class="form-shape" type="text" placeholder=" Enter Username" id="uname" required><br>
 								<label><b>Password:</b></label>
-    						<input class="form-shape" type="password" placeholder=" Enter Password" name="pswd" required><br><br>
+    						<input class="form-shape" type="password" placeholder=" Enter Password" id="pswd" required><br><br>
 								<button class="form-shape btn-color" type="submit">Login</button>
 						</form>
 					</article>
@@ -29,17 +26,23 @@
 
 		<script type="text/javascript">
 			function validate() {
-		    //var un = document.getElementsByName('uname').value;
-				//var pw = document.getElementsByName('pswd').value;
-				//if (un == 'Allen') && (pw== 'Huddleston') {-->
-					window.close()
-					window.open("./home/home.html");
+
+				let un = document.getElementById("uname").value;
+				let pw = document.getElementById("pswd").value;
+
+				if (un == "Allen") {
+					if (pw == "Huddleston") {
+						window.close()
+						window.open("./home/home.html");
+					}
+					else {
+						alert("Password is invald: You shall not pass!")
+					}
 				}
-					//else {
-						//alert("Username and/or Password is incorrect");
-						//return false;
-					//}
-			//}
+				else {
+					alert("Username is invalid: You shall not pass!");
+				}
+			}
 		</script>
 	</body>
 </html>
