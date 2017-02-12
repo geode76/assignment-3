@@ -5,26 +5,7 @@
 		<link rel="icon" type="image/jpg" href="./images/triforce.jpg">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<style>
-		.main-content-login {
-			background-color: skyblue;
-			display: flex;
-			width: 24em;
-	    height: 20em;
-			margin: 7em auto;
-	    padding: 0 2% 0 2%;
-			border-radius: 15px;
-	  }
-		.container {
-			align-items: center;
-			white-space: pre-line;
-			margin: .5em 0 0 3em;
-			font-size: 1.5em;
-		}
-		.form-shape {
-			width: 18em;
-			height: 2em;
-			border-radius: 5px;
-		}
+
 		</style>
 	</head>
 	<body>
@@ -33,19 +14,32 @@
 				<h1>Allen Huddleston</h1>
 			</header>
 					<article class = "main-content-login box-shadow">
-						<form action="./home/home.html">
-  						<div class="container">
+						<form name="login" class="container" onsubmit="return validate()">
     						<label><b>Username:</b></label>
-    						<input class="form-shape"type="text" placeholder=" Enter Username" name="uname" required><br>
+    						<input class="form-shape" type="text" placeholder=" Enter Username" name="uname" required><br>
 								<label><b>Password:</b></label>
-    						<input class="form-shape"type="password" placeholder=" Enter Password" name="psw" required><br><br>
-								<button class="form-shape"type="submit">Login</button>
-							</div>
+    						<input class="form-shape" type="password" placeholder=" Enter Password" name="pswd" required><br><br>
+								<button class="form-shape btn-color" type="submit">Login</button>
 						</form>
 					</article>
 			</div>
 		<footer class ="footer-3C">
 				<p class="copyright">(c) Created by Allen Huddleston</p>
 		</footer>
+
+		<script type="text/javascript">
+			function validate() {
+		    //var un = document.getElementsByName('uname').value;
+				//var pw = document.getElementsByName('pswd').value;
+				//if (un == 'Allen') && (pw== 'Huddleston') {-->
+					window.close()
+					window.open("./home/home.html");
+				}
+					//else {
+						//alert("Username and/or Password is incorrect");
+						//return false;
+					//}
+			//}
+		</script>
 	</body>
 </html>
