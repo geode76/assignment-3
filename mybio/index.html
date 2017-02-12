@@ -23,26 +23,6 @@
 		<footer class ="footer-3C">
 				<p class="copyright">(c) Created by Allen Huddleston</p>
 		</footer>
-
-		<script type="text/javascript">
-			function validate() {
-
-				let un = document.getElementById("uname").value;
-				let pw = document.getElementById("pswd").value;
-
-				if (un == "Allen") {
-					if (pw == "Huddleston") {
-						window.close()
-						window.open("./home/home.html");
-					}
-					else {
-						alert("Password is invald: You shall not pass!")
-					}
-				}
-				else {
-					alert("Username is invalid: You shall not pass!");
-				}
-			}
-		</script>
+		<script src="./js/login.js"type="text/javascript"></script>
 	</body>
 </html>
